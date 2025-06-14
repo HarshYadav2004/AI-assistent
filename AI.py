@@ -14,7 +14,7 @@ import pywhatkit
 import pyautogui
 import cv2
 
-openai.api_key = "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"
+openai.api_key = "replace-with-your-openai-api-key" 
 
 
 # Initialize text-to-speech engine
@@ -336,7 +336,7 @@ def click(event):
 root.bind("<Return>", click)
 
 def get_weather_data(city):
-    api_key = "8c0c411b5f8a2fe1fdf44b9a36a25488"  # replace with your own OpenWeatherMap API key
+    api_key = "replace-with-your-OpenWeatherMa-api-key"  # replace with your own OpenWeatherMap API key
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
     response = requests.get(url)
     if response.status_code == 200:
